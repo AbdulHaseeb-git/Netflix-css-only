@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    height: fit-content;
+    width: 100vw;
+}
+header{
+    height: 95vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid rgba(128, 128, 128, 0.6);
+}
+header .top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 20px 30px 0 30px;
+}
+.logo{
+    width: 150px;
+    
+}
+.headerButtons{
+    width: 15%;
+    height: fit-content;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.headerButtons button{
+    width: 45%;
+    height: 40px;
+}
+.lang{
+    border: 2px solid white;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+}
+.lang>img{
+    width: 5px;
+}
+.signIn{
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+    font-weight: bold;
+}
+
+
+.bottom{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.bottom h1{
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.bottom .p2{
+    color: rgb(184, 185, 185);
+    font-size: 0.8rem;
+}
+.account{
+    width: 45%;
+    text-align: center;
+}
+.account input{
+    border: none;
+    outline: none;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.i2{
+    background-color: red;
+    color: white;
+    padding: 0 20px;
+    width: fit-content;
+}
+.i1::placeholder{
+    color: grey;
+}
+.i1{
+    color: black;
+    padding: 0 10px;
+    width: 60%;
+}
+
+
+/* main starts here */
+main{
+    border-bottom: 10px solid rgba(128, 128, 128, 0.6);
+}
+main .first ,main .second ,main .third ,main .fourth{
+    border-bottom: 10px solid rgba(128, 128, 128, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first img, .second img, .third img , .fourth img{
+    width: 100%;
+}
+main h2{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+main .inner{
+    width: 40%;
+    padding-left: 10%;
+    text-align: left;
+}
+main .outer{
+    width: 40%;
+}
+.second , .fourth{
+    flex-direction: row-reverse;
+}
+.fifth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 50px 0;
+}
+.qa{
+    margin-top: 20px;
+}
+.fifth label{
+    display: flex;
+    background: #303030;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-weight: 500;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.fifth label::after{
+    content: "+";
+    font-size: 18px;
+    font-weight: 800;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+.qa li{
+    width: 500px;
+}
+.qa li input[type="radio"]{
+    display: none;
+}
+.content{
+    background-color: #303030;
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.5s , padding 0.5s;
+}
+.qa input[type="radio"]:checked + label + .content{
+    max-height: fit-content;
+    padding: 10px 20px;
+}
+.qa input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+/* footer starts here */
+
+footer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: grey;
+    margin: 60px auto;
+    padding-bottom: 10px;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.foot ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.brand span{
+    color: red;
+}
